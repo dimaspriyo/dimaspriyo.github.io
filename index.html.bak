@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ATTUNE — Jeda. Renungkan. Selaraskan.</title>
+    <title>attune.id — Pause. Reflect. Realign.</title>
     <meta name="description"
-        content="Ruang profesional dan aman untuk membantu Anda memahami emosi, mendapatkan kejelasan, dan menghadapi tantangan hidup dengan kesadaran yang lebih dalam.">
+        content="A safe space to pause, reflect, and realign with yourself. attune.id is a campaign about psychology, reflection, and self-love.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -329,12 +329,6 @@
             font-style: italic;
         }
 
-        .hero h1 .sub-lang {
-            font-size: 0.55em;
-            font-weight: 400;
-            opacity: 0.75;
-        }
-
         .hero p {
             font-size: 1.15rem;
             color: var(--text-light);
@@ -408,7 +402,6 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
-            object-position: center center;
             display: block;
         }
 
@@ -451,13 +444,13 @@
             animation: float-tag 3s ease-in-out infinite;
         }
 
-        .tag-awareness {
+        .tag-self-love {
             top: -12%;
             right: -35%;
             animation-delay: 0s;
         }
 
-        .tag-growth {
+        .tag-psychology {
             bottom: -12%;
             left: -35%;
             animation-delay: 1.5s;
@@ -509,7 +502,7 @@
             }
         }
 
-        /* About / What is ATTUNE */
+        /* About */
         .about {
             padding: 120px 0;
             position: relative;
@@ -594,39 +587,39 @@
             transform: scale(1.05);
         }
 
-        /* ATTUNE Framework */
-        .framework {
+        /* Values */
+        .values {
             padding: 120px 0;
             position: relative;
             z-index: 1;
         }
 
-        .framework-header {
+        .values-header {
             text-align: center;
             margin-bottom: 64px;
         }
 
-        .framework-header .section-subtitle {
+        .values-header .section-subtitle {
             margin: 0 auto;
         }
 
-        .framework-grid {
+        .values-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            gap: 24px;
+            gap: 32px;
         }
 
-        .framework-card {
+        .value-card {
             background: rgba(253, 248, 244, 0.6);
             border: 1px solid rgba(161, 173, 107, 0.12);
             border-radius: 24px;
-            padding: 32px 28px;
+            padding: 40px 32px;
             transition: var(--transition);
             position: relative;
             overflow: hidden;
         }
 
-        .framework-card::before {
+        .value-card::before {
             content: '';
             position: absolute;
             top: 0;
@@ -639,308 +632,127 @@
             transition: var(--transition);
         }
 
-        .framework-card:hover {
+        .value-card:hover {
             transform: translateY(-4px);
             box-shadow: 0 12px 40px rgba(81, 96, 75, 0.08);
             border-color: rgba(161, 173, 107, 0.25);
         }
 
-        .framework-card:hover::before {
+        .value-card:hover::before {
             transform: scaleX(1);
         }
 
-        .framework-letter {
-            font-family: var(--font-serif);
-            font-size: 2rem;
-            font-weight: 600;
-            color: var(--sage);
-            line-height: 1;
-            margin-bottom: 8px;
+        .value-icon {
+            width: 56px;
+            height: 56px;
+            border-radius: 16px;
+            background: rgba(161, 173, 107, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            margin-bottom: 20px;
         }
 
-        .framework-card h3 {
+        .value-card h3 {
             font-family: var(--font-serif);
-            font-size: 1.15rem;
+            font-size: 1.3rem;
             font-weight: 500;
             color: var(--dark-forest);
-            margin-bottom: 8px;
+            margin-bottom: 12px;
         }
 
-        .framework-card p {
-            font-size: 0.9rem;
+        .value-card p {
+            font-size: 0.95rem;
             color: var(--text-light);
             line-height: 1.7;
         }
 
-        /* Who it's for */
-        .who-for {
-            margin-top: 48px;
-            padding: 40px;
-            background: rgba(253, 248, 244, 0.6);
-            border: 1px solid rgba(161, 173, 107, 0.12);
-            border-radius: 24px;
-            text-align: center;
-        }
-
-        .who-for h3 {
-            font-family: var(--font-serif);
-            font-size: 1.4rem;
-            font-weight: 500;
-            color: var(--dark-forest);
-            margin-bottom: 24px;
-        }
-
-        .who-for-tags {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 12px;
-            justify-content: center;
-        }
-
-        .who-for-tag {
-            display: inline-flex;
-            align-items: center;
-            gap: 6px;
-            background: rgba(161, 173, 107, 0.1);
-            padding: 10px 20px;
-            border-radius: 100px;
-            font-size: 0.9rem;
-            color: var(--text);
-            font-weight: 500;
-        }
-
-        .principles {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 12px;
-            justify-content: center;
-            margin-top: 20px;
-        }
-
-        .principle-tag {
-            display: inline-flex;
-            align-items: center;
-            gap: 6px;
-            padding: 8px 16px;
-            border-radius: 100px;
-            font-size: 0.8rem;
-            color: var(--olive);
-            background: rgba(115, 140, 81, 0.08);
-            font-weight: 500;
-        }
-
-        /* Pricing */
-        .pricing {
+        /* Posts */
+        .posts {
             padding: 120px 0;
             position: relative;
             z-index: 1;
             background: linear-gradient(0deg, var(--cream) 0%, rgba(209, 230, 204, 0.15) 100%);
         }
 
-        .pricing-header {
-            text-align: center;
-            margin-bottom: 64px;
+        .posts-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            margin-bottom: 48px;
+            flex-wrap: wrap;
+            gap: 24px;
         }
 
-        .pricing-header .section-subtitle {
-            margin: 0 auto;
-        }
-
-        .pricing-grid {
+        .posts-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 32px;
-            align-items: stretch;
         }
 
-        .pricing-card {
-            background: rgba(253, 248, 244, 0.6);
-            border: 1px solid rgba(161, 173, 107, 0.12);
+        .post-card {
             border-radius: 24px;
-            padding: 40px 32px;
+            overflow: hidden;
+            background: white;
+            border: 1px solid rgba(161, 173, 107, 0.1);
             transition: var(--transition);
-            position: relative;
-            display: flex;
-            flex-direction: column;
-            min-height: 540px;
+            cursor: pointer;
         }
 
-        .pricing-card:hover {
+        .post-card:hover {
             transform: translateY(-6px);
             box-shadow: 0 16px 48px rgba(81, 96, 75, 0.1);
-            border-color: rgba(161, 173, 107, 0.25);
         }
 
-        .pricing-card.featured {
-            border-color: var(--sage);
-            background: white;
-            transform: scale(1.03);
+        .post-card-image {
+            aspect-ratio: 4 / 5;
+            overflow: hidden;
+            background: var(--sage-light);
         }
 
-        .pricing-card.featured:hover {
-            transform: scale(1.03) translateY(-6px);
+        .post-card-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: var(--transition);
         }
 
-        .pricing-card .pricing-icon {
-            font-size: 2rem;
-            margin-bottom: 16px;
+        .post-card:hover .post-card-image img {
+            transform: scale(1.05);
         }
 
-        .pricing-card .pricing-format {
-            font-size: 0.75rem;
+        .post-card-body {
+            padding: 24px;
+        }
+
+        .post-card-tag {
+            display: inline-block;
+            font-size: 0.7rem;
             font-weight: 600;
-            letter-spacing: 2px;
+            letter-spacing: 1.5px;
             text-transform: uppercase;
             color: var(--olive);
             background: rgba(161, 173, 107, 0.1);
             padding: 4px 12px;
             border-radius: 100px;
-            display: inline-block;
             margin-bottom: 12px;
-            align-self: flex-start;
         }
 
-        .pricing-card h3 {
+        .post-card h3 {
             font-family: var(--font-serif);
-            font-size: 1.3rem;
+            font-size: 1.15rem;
             font-weight: 500;
             color: var(--dark-forest);
             margin-bottom: 8px;
+            line-height: 1.4;
         }
 
-        .pricing-duration {
-            font-size: 0.85rem;
+        .post-card p {
+            font-size: 0.9rem;
             color: var(--text-light);
-            margin-bottom: 16px;
-        }
-
-        .pricing-price {
-            font-family: var(--font-serif);
-            font-size: 2.2rem;
-            font-weight: 600;
-            color: var(--forest);
-            margin-bottom: 20px;
-        }
-
-        .pricing-divider {
-            height: 1px;
-            background: rgba(161, 173, 107, 0.15);
-            margin-bottom: 20px;
-        }
-
-        .pricing-suitable {
-            list-style: none;
-            margin-bottom: 28px;
-            flex-grow: 1;
-        }
-
-        .pricing-suitable li {
-            display: flex;
-            align-items: flex-start;
-            gap: 8px;
-            padding: 6px 0;
-            font-size: 0.85rem;
-            color: var(--text-light);
-            line-height: 1.5;
-        }
-
-        .pricing-suitable li .bullet {
-            color: var(--sage);
-            flex-shrink: 0;
-            margin-top: 2px;
-        }
-
-        .pricing-card .btn {
-            width: 100%;
-            justify-content: center;
-        }
-
-        /* How It Works */
-        .how-it-works {
-            padding: 120px 0;
-            position: relative;
-            z-index: 1;
-        }
-
-        .how-header {
-            text-align: center;
-            margin-bottom: 64px;
-        }
-
-        .how-header .section-subtitle {
-            margin: 0 auto;
-        }
-
-        .steps-grid {
-            display: grid;
-            grid-template-columns: repeat(5, 1fr);
-            gap: 16px;
-            position: relative;
-        }
-
-        .steps-grid::before {
-            content: '';
-            position: absolute;
-            top: 48px;
-            left: 10%;
-            right: 10%;
-            height: 2px;
-            background: linear-gradient(to right, var(--sage), var(--sage-light), var(--sage));
-            z-index: 0;
-        }
-
-        .step-card {
-            text-align: center;
-            position: relative;
-            z-index: 1;
-            padding: 0 8px;
-        }
-
-        .step-number {
-            width: 56px;
-            height: 56px;
-            border-radius: 50%;
-            background: var(--cream);
-            border: 2px solid var(--sage);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0 auto 16px;
-            font-family: var(--font-serif);
-            font-size: 1.3rem;
-            font-weight: 600;
-            color: var(--forest);
-            transition: var(--transition);
-        }
-
-        .step-card:hover .step-number {
-            background: var(--sage);
-            color: white;
-        }
-
-        .step-icon {
-            font-size: 1.5rem;
-            margin-bottom: 8px;
-            display: block;
-        }
-
-        .step-card h4 {
-            font-family: var(--font-serif);
-            font-size: 1rem;
-            font-weight: 500;
-            color: var(--dark-forest);
-            margin-bottom: 6px;
-        }
-
-        .step-card p {
-            font-size: 0.8rem;
-            color: var(--text-light);
-            line-height: 1.5;
-        }
-
-        .how-cta {
-            text-align: center;
-            margin-top: 48px;
+            line-height: 1.6;
         }
 
         /* Testimonials */
@@ -948,7 +760,6 @@
             padding: 120px 0;
             position: relative;
             z-index: 1;
-            background: linear-gradient(180deg, rgba(209, 230, 204, 0.1) 0%, var(--cream) 100%);
         }
 
         .testimonials-header {
@@ -956,13 +767,9 @@
             margin-bottom: 64px;
         }
 
-        .testimonials-header .section-subtitle {
-            margin: 0 auto;
-        }
-
         .testimonials-grid {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: repeat(3, 1fr);
             gap: 32px;
         }
 
@@ -1026,7 +833,201 @@
             color: var(--text-light);
         }
 
-        /* CTA / Contact */
+        /* Booking Form */
+        .booking {
+            padding: 120px 0;
+            position: relative;
+            z-index: 1;
+            background: linear-gradient(180deg, rgba(209, 230, 204, 0.1) 0%, var(--cream) 100%);
+        }
+
+        .booking-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 64px;
+            align-items: start;
+        }
+
+        .booking-info h2 {
+            font-family: var(--font-serif);
+            font-size: clamp(1.8rem, 4vw, 2.6rem);
+            font-weight: 500;
+            line-height: 1.2;
+            color: var(--dark-forest);
+            margin-bottom: 16px;
+        }
+
+        .booking-info p {
+            font-size: 1rem;
+            color: var(--text-light);
+            line-height: 1.8;
+            margin-bottom: 24px;
+        }
+
+        .booking-benefits {
+            list-style: none;
+            margin-bottom: 32px;
+        }
+
+        .booking-benefits li {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 10px 0;
+            font-size: 0.95rem;
+            color: var(--text);
+            border-bottom: 1px solid rgba(161, 173, 107, 0.08);
+        }
+
+        .booking-benefits li:last-child {
+            border-bottom: none;
+        }
+
+        .booking-benefits .check {
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            background: rgba(161, 173, 107, 0.12);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--olive);
+            font-size: 0.8rem;
+            flex-shrink: 0;
+        }
+
+        .whatsapp-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: #25D366;
+            color: white;
+            padding: 14px 28px;
+            border-radius: 100px;
+            font-family: var(--font-sans);
+            font-size: 0.95rem;
+            font-weight: 500;
+            text-decoration: none;
+            transition: var(--transition);
+            border: none;
+            cursor: pointer;
+        }
+
+        .whatsapp-btn:hover {
+            background: #1DA851;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(37, 211, 102, 0.3);
+        }
+
+        .booking-form {
+            background: rgba(253, 248, 244, 0.8);
+            border: 1px solid rgba(161, 173, 107, 0.15);
+            border-radius: 24px;
+            padding: 40px;
+            box-shadow: 0 8px 32px rgba(81, 96, 75, 0.06);
+        }
+
+        .booking-form h3 {
+            font-family: var(--font-serif);
+            font-size: 1.4rem;
+            font-weight: 500;
+            color: var(--dark-forest);
+            margin-bottom: 8px;
+        }
+
+        .booking-form .form-subtitle {
+            font-size: 0.9rem;
+            color: var(--text-light);
+            margin-bottom: 28px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 0.85rem;
+            font-weight: 500;
+            color: var(--text);
+            margin-bottom: 6px;
+        }
+
+        .form-group label .required {
+            color: #D9534F;
+            margin-left: 2px;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px 16px;
+            border: 1.5px solid rgba(161, 173, 107, 0.2);
+            border-radius: 12px;
+            font-family: var(--font-sans);
+            font-size: 0.95rem;
+            color: var(--text);
+            background: white;
+            transition: var(--transition);
+            outline: none;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            border-color: var(--sage);
+            box-shadow: 0 0 0 3px rgba(161, 173, 107, 0.1);
+        }
+
+        .form-group input::placeholder,
+        .form-group textarea::placeholder {
+            color: #B0B0B0;
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+        }
+
+        .form-submit {
+            width: 100%;
+            padding: 14px;
+            background: var(--forest);
+            color: white;
+            border: none;
+            border-radius: 100px;
+            font-family: var(--font-sans);
+            font-size: 1rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        .form-submit:hover {
+            background: var(--olive);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(81, 96, 75, 0.3);
+        }
+
+        .form-note {
+            text-align: center;
+            font-size: 0.8rem;
+            color: var(--text-light);
+            margin-top: 16px;
+        }
+
+        /* CTA */
         .cta {
             padding: 120px 0;
             position: relative;
@@ -1079,28 +1080,6 @@
         .cta .btn-secondary:hover {
             border-color: rgba(255, 255, 255, 0.6);
             background: rgba(255, 255, 255, 0.05);
-        }
-
-        .cta-contact-info {
-            display: flex;
-            justify-content: center;
-            gap: 32px;
-            margin-top: 32px;
-            flex-wrap: wrap;
-        }
-
-        .cta-contact-item {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            color: rgba(255, 255, 255, 0.8);
-            font-size: 0.95rem;
-            text-decoration: none;
-            transition: var(--transition);
-        }
-
-        .cta-contact-item:hover {
-            color: white;
         }
 
         /* Footer */
@@ -1238,12 +1217,12 @@
                 max-width: 300px;
             }
 
-            .tag-awareness {
+            .tag-self-love {
                 right: -15%;
                 top: -15%;
             }
 
-            .tag-growth {
+            .tag-psychology {
                 left: -15%;
                 bottom: -15%;
             }
@@ -1253,32 +1232,21 @@
                 gap: 48px;
             }
 
-            .framework-grid {
+            .values-grid {
                 grid-template-columns: repeat(2, 1fr);
             }
 
-            .pricing-grid {
+            .posts-grid {
                 grid-template-columns: repeat(2, 1fr);
-            }
-
-            .pricing-card.featured {
-                transform: none;
-            }
-
-            .pricing-card.featured:hover {
-                transform: translateY(-6px);
-            }
-
-            .steps-grid {
-                grid-template-columns: repeat(3, 1fr);
-            }
-
-            .steps-grid::before {
-                display: none;
             }
 
             .testimonials-grid {
                 grid-template-columns: repeat(2, 1fr);
+            }
+
+            .booking-grid {
+                grid-template-columns: 1fr;
+                gap: 48px;
             }
 
             .footer-grid {
@@ -1310,28 +1278,12 @@
                 display: block;
             }
 
-            .framework-grid {
+            .values-grid {
                 grid-template-columns: 1fr;
             }
 
-            .pricing-grid {
+            .posts-grid {
                 grid-template-columns: 1fr;
-            }
-
-            .pricing-card.featured {
-                transform: none;
-            }
-
-            .pricing-card.featured:hover {
-                transform: translateY(-6px);
-            }
-
-            .steps-grid {
-                grid-template-columns: 1fr 1fr;
-            }
-
-            .steps-grid::before {
-                display: none;
             }
 
             .testimonials-grid {
@@ -1378,10 +1330,6 @@
             .about-stats {
                 grid-template-columns: 1fr;
             }
-
-            .steps-grid {
-                grid-template-columns: 1fr;
-            }
         }
     </style>
 </head>
@@ -1396,13 +1344,14 @@
         <div class="container nav-inner">
             <a href="#" class="logo">attune<span>.</span>id</a>
             <ul class="nav-links" id="navLinks">
-                <li><a href="#about">Apa itu ATTUNE</a></li>
-                <li><a href="#pricing">Harga</a></li>
-                <li><a href="#how-it-works">Cara Kerja</a></li>
-                <li><a href="#testimonials">Cerita</a></li>
-                <li><a href="#cta" class="nav-cta">Pesan Sesi</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#values">Values</a></li>
+                <li><a href="#posts">Journal</a></li>
+                <li><a href="#testimonials">Stories</a></li>
+                <li><a href="#booking">Counseling</a></li>
+                <li><a href="#cta" class="nav-cta">Begin Your Journey</a></li>
             </ul>
-            <button class="mobile-toggle" id="mobileToggle" aria-label="Buka menu">
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
                 <span></span><span></span><span></span>
             </button>
         </div>
@@ -1415,364 +1364,242 @@
                 <div class="hero-content">
                     <div class="hero-badge">
                         <span class="dot"></span>
-                        Ruang Refleksi Emosional
+                        A safe space for your mind
                     </div>
                     <h1>
                         Pause.<br>
-                        <span class="sub-lang">(Jeda.)</span><br>
                         Reflect.<br>
-                        <span class="sub-lang">(Renungkan.)</span><br>
-                        <span class="highlight">
-                            Realign.
-                            <br/>
-                            <span class="sub-lang">(Selaraskan.)</span>
-                        </span>
+                        <span class="highlight">Realign.</span>
                     </h1>
                     <p>
-                        Ruang profesional dan aman untuk membantu Anda memahami emosi,
-                        mendapatkan kejelasan, dan menghadapi tantangan hidup dengan kesadaran yang lebih dalam.
-                        Karena pertumbuhan tidak selalu datang dari memaksakan diri —
-                        terkadang pertumbuhan datang dari memahami diri sendiri lebih baik.
+                        attune.id is a campaign about psychology, reflection, and self-love.
+                        A gentle invitation to slow down, turn inward, and reconnect with
+                        the person who matters most — you.
                     </p>
                     <div class="hero-actions">
-                        <a href="#pricing" class="btn btn-primary">
-                            Pesan Sesi
+                        <a href="#cta" class="btn btn-primary">
+                            Start Your Practice
                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
                                 <path d="M1 8H15M15 8L8 1M15 8L8 15" stroke="currentColor" stroke-width="1.5"
                                     stroke-linecap="round" stroke-linejoin="round" />
                             </svg>
                         </a>
-                        <a href="#about" class="btn btn-secondary">Pelajari Lebih Lanjut</a>
+                        <a href="#about" class="btn btn-secondary">Learn More</a>
                     </div>
                 </div>
                 <div class="hero-visual">
                     <div class="hero-image-wrapper">
                         <div class="hero-image-ring"></div>
                         <div class="hero-image-ring-2"></div>
-                        <img src="assets/profile-picture.jpg" alt="ATTUNE" style="padding-top: 50px;">
+                        <img src="assets/profile-picture.jpg" alt="attune.id">
                     </div>
+                    <!-- <div class="hero-floating-tag tag-self-love">🌿 Self-Love</div> -->
+                    <!-- <div class="hero-floating-tag tag-psychology">🧠 Psychology</div> -->
                 </div>
             </div>
         </div>
         <div class="scroll-indicator">
-            <span>Gulir</span>
+            <span>Scroll</span>
             <div class="scroll-line"></div>
         </div>
     </section>
 
-    <!-- Apa itu ATTUNE -->
+    <!-- About -->
     <section class="about" id="about">
         <div class="container">
             <div class="about-grid">
                 <div class="about-content reveal">
-                    <span class="section-label">Apa itu Attune.id</span>
-                    <h2 class="section-title">Ruang untuk memahami diri sendiri</h2>
+                    <span class="section-label">Our Mission</span>
+                    <h2 class="section-title">A space to come home to yourself</h2>
                     <div class="motto">
-                        "ATTUNE bukan sekadar tempat untuk berbicara. Ini adalah ruang untuk memahami."
+                        "A safe space to pause, reflect, and realign with yourself 🌿"
                     </div>
                     <p class="section-subtitle">
-                        Kami menyediakan sesi refleksi emosional terstruktur bagi individu yang sedang menghadapi
-                        tantangan hubungan, stres, dinamika keluarga, tekanan karier, transisi hidup,
-                        dan overthinking. Setiap sesi berlangsung hangat, rahasia, dan terpandu dengan
-                        pendekatan refleksi yang terstruktur.
+                        In a world that constantly demands more from you, attune.id is a reminder
+                        that you are already enough. We explore the gentle art of self-awareness,
+                        emotional attunement, and the courage it takes to look inward with kindness.
                     </p>
                     <div class="about-stats">
                         <div class="stat-item">
-                            <span class="stat-number">🧠</span>
-                            <span class="stat-label">Kesadaran</span>
+                            <span class="stat-number">100+</span>
+                            <span class="stat-label">Reflections Shared</span>
                         </div>
                         <div class="stat-item">
-                            <span class="stat-number">🛡️</span>
-                            <span class="stat-label">Keamanan</span>
+                            <span class="stat-number">1K+</span>
+                            <span class="stat-label">Lives Touched</span>
                         </div>
                         <div class="stat-item">
-                            <span class="stat-number">🌱</span>
-                            <span class="stat-label">Pertumbuhan</span>
+                            <span class="stat-number">52</span>
+                            <span class="stat-label">Weeks of Practice</span>
                         </div>
                     </div>
                 </div>
                 <div class="about-visual reveal reveal-delay-2">
                     <div class="about-visual-item">
-                        <img src="assets/post-1.webp" alt="Jurnal refleksi">
+                        <img src="assets/post-1.webp" alt="Reflection journal entry">
                     </div>
                     <div class="about-visual-item">
-                        <img src="assets/post-2.webp" alt="Praktik mencintai diri sendiri">
+                        <img src="assets/post-2.webp" alt="Self-love practice">
                     </div>
                     <div class="about-visual-item">
-                        <img src="assets/post-3.webp" alt="Momen mindfulness">
+                        <img src="assets/post-3.webp" alt="Mindfulness moment">
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Kerangka ATTUNE -->
-    <section class="framework" id="framework">
+    <!-- Values -->
+    <section class="values" id="values">
         <div class="container">
-            <div class="framework-header reveal">
-                <span class="section-label">Kerangka ATTUNE</span>
-                <h2 class="section-title">Perjalanan Anda dalam 6 langkah</h2>
+            <div class="values-header reveal">
+                <span class="section-label">Our Pillars</span>
+                <h2 class="section-title">What we stand for</h2>
                 <p class="section-subtitle">
-                    Pendekatan terstruktur untuk refleksi emosional — dari mengakui di mana Anda berada
-                    hingga memberdayakan ke mana Anda ingin pergi.
+                    Three guiding principles that shape every reflection, every practice,
+                    and every conversation we share.
                 </p>
             </div>
-            <div class="framework-grid">
-                <div class="framework-card reveal reveal-delay-1">
-                    <div class="framework-letter">A</div>
-                    <h3>Acknowledge (Akui)</h3>
-                    <p>Memahami keadaan emosional Anda saat ini — menyebut apa yang Anda rasakan tanpa penghakiman.</p>
+            <div class="values-grid">
+                <div class="value-card reveal reveal-delay-1">
+                    <div class="value-icon">🧠</div>
+                    <h3>Psychology & Awareness</h3>
+                    <p>
+                        Understanding how your mind works is the first step toward healing.
+                        We explore emotional patterns, cognitive habits, and the science
+                        behind self-awareness — not to diagnose, but to understand.
+                    </p>
                 </div>
-                <div class="framework-card reveal reveal-delay-1">
-                    <div class="framework-letter">T</div>
-                    <h3>Tell your story (Ceritakan)</h3>
-                    <p>Berbagi pengalaman Anda dengan aman di ruang yang mendengarkan tanpa menyela.</p>
+                <div class="value-card reveal reveal-delay-2">
+                    <div class="value-icon">🌿</div>
+                    <h3>Reflection & Growth</h3>
+                    <p>
+                        Growth doesn't happen in constant motion — it happens in the pauses.
+                        We create space for honest reflection, where you can look back at
+                        where you've been and gently choose where to go next.
+                    </p>
                 </div>
-                <div class="framework-card reveal reveal-delay-2">
-                    <div class="framework-letter">T</div>
-                    <h3>Trace the pattern (Lacak pola)</h3>
-                    <p>Mengidentifikasi pola emosional — menyadari apa yang terus muncul dalam hidup Anda.</p>
-                </div>
-                <div class="framework-card reveal reveal-delay-2">
-                    <div class="framework-letter">U</div>
-                    <h3>Understand (Pahami)</h3>
-                    <p>Mengenali kebutuhan dan pemicu Anda — menghubungkan titik-titik dengan penuh kasih.</p>
-                </div>
-                <div class="framework-card reveal reveal-delay-3">
-                    <div class="framework-letter">N</div>
-                    <h3>Navigate (Arahkan)</h3>
-                    <p>Mengeksplorasi kemungkinan arah — langkah kecil apa yang terasa tepat untuk Anda?</p>
-                </div>
-                <div class="framework-card reveal reveal-delay-3">
-                    <div class="framework-letter">E</div>
-                    <h3>Empower (Berdayakan)</h3>
-                    <p>Melangkah maju dengan kejelasan dan kekuatan — Anda tidak sendiri dalam perjalanan ini.</p>
-                </div>
-            </div>
-
-            <div class="who-for reveal">
-                <h3>Untuk siapa ini?</h3>
-                <div class="who-for-tags">
-                    <span class="who-for-tag">💔 Tantangan Hubungan</span>
-                    <span class="who-for-tag">😮‍💨 Stres & Kelelahan</span>
-                    <span class="who-for-tag">👨‍👩‍👧‍👦 Dinamika Keluarga</span>
-                    <span class="who-for-tag">💼 Tekanan Karier</span>
-                    <span class="who-for-tag">🔄 Transisi Hidup</span>
-                    <span class="who-for-tag">🤔 Overthinking</span>
-                </div>
-                <div class="principles">
-                    <span class="principle-tag">🔒 Rahasia</span>
-                    <span class="principle-tag">💛 Tanpa Penghakiman</span>
-                    <span class="principle-tag">🎯 Berfokus pada Refleksi</span>
-                    <span class="principle-tag">🤝 Profesional & Hangat</span>
-                    <span class="principle-tag">📅 Berdasarkan Janji Temu</span>
+                <div class="value-card reveal reveal-delay-3">
+                    <div class="value-icon">💛</div>
+                    <h3>Self-Love & Compassion</h3>
+                    <p>
+                        Before anything else, you deserve kindness from yourself. We practice
+                        self-compassion not as a luxury, but as a foundation — the quiet
+                        revolution of treating yourself with the same warmth you give others.
+                    </p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Harga -->
-    <section class="pricing" id="pricing">
+    <!-- Posts / Campaign Journal -->
+    <section class="posts" id="posts">
         <div class="container">
-            <div class="pricing-header reveal">
-                <span class="section-label">Harga</span>
-                <h2 class="section-title">Pilih jalur refleksi Anda</h2>
+            <div class="posts-header reveal">
+                <div>
+                    <span class="section-label">Journal</span>
+                    <h2 class="section-title">Reflections from the journey</h2>
+                </div>
                 <p class="section-subtitle">
-                    Tiga jenis sesi yang dirancang untuk menemui Anda di mana pun Anda berada. Semua sesi
-                    bersifat rahasia, terpandu, dan disesuaikan dengan kebutuhan Anda.
+                    Each post is a gentle nudge — a reminder that you're not alone
+                    in what you're feeling.
                 </p>
             </div>
-            <div class="pricing-grid">
-                <!-- Sesi Chat -->
-                <div class="pricing-card reveal reveal-delay-1">
-                    <div class="pricing-icon">💬</div>
-                    <span class="pricing-format">Berbasis Teks</span>
-                    <h3>Refleksi Chat</h3>
-                    <p class="pricing-duration">Durasi 30 Menit/Sesi</p>
-                    <div class="pricing-price">Rp 50.000</div>
-                    <div class="pricing-divider"></div>
-                    <ul class="pricing-suitable">
-                        <li><span class="bullet">•</span> Merasa bingung dan butuh ruang aman</li>
-                        <li><span class="bullet">•</span> Ingin mengekspresikan pikiran dengan bebas</li>
-                        <li><span class="bullet">•</span> Butuh kejelasan awal tentang situasi Anda</li>
-                    </ul>
-                    <a href="https://wa.me/6281111123943?text=Halo%20ATTUNE!%20Saya%20ingin%20memesan%20sesi%20Refleksi%20Chat%20(Rp%2050.000)"
-                        target="_blank" rel="noopener noreferrer" class="btn btn-primary">
-                        Pesan Sesi Ini
-                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-                            <path d="M1 8H15M15 8L8 1M15 8L8 15" stroke="currentColor" stroke-width="1.5"
-                                stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
-                    </a>
+            <div class="posts-grid">
+                <div class="post-card reveal reveal-delay-1">
+                    <div class="post-card-image">
+                        <img src="assets/post-1.webp" alt="Journal entry about self-reflection">
+                    </div>
+                    <div class="post-card-body">
+                        <span class="post-card-tag">Reflection</span>
+                        <h3>The art of sitting with yourself</h3>
+                        <p>
+                            Learning to be still is not about doing nothing — it's about
+                            creating space for your own voice to be heard.
+                        </p>
+                    </div>
                 </div>
-
-                <!-- Sesi Suara (Featured) -->
-                <div class="pricing-card featured reveal reveal-delay-2">
-                    <div class="pricing-icon">🎙️</div>
-                    <span class="pricing-format">Panggilan Suara</span>
-                    <h3>Refleksi Suara</h3>
-                    <p class="pricing-duration">Durasi 30 Menit/Sesi</p>
-                    <div class="pricing-price">Rp 75.000</div>
-                    <div class="pricing-divider"></div>
-                    <ul class="pricing-suitable">
-                        <li><span class="bullet">•</span> Perlu didengarkan dan dipahami</li>
-                        <li><span class="bullet">•</span> Merasa lelah secara emosional</li>
-                        <li><span class="bullet">•</span> Ingin arahan dalam menangani suatu situasi</li>
-                    </ul>
-                    <a href="https://wa.me/6281111123943?text=Halo%20ATTUNE!%20Saya%20ingin%20memesan%20sesi%20Refleksi%20Suara%20(Rp%2075.000)"
-                        target="_blank" rel="noopener noreferrer" class="btn btn-primary">
-                        Pesan Sesi Ini
-                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-                            <path d="M1 8H15M15 8L8 1M15 8L8 15" stroke="currentColor" stroke-width="1.5"
-                                stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
-                    </a>
+                <div class="post-card reveal reveal-delay-2">
+                    <div class="post-card-image">
+                        <img src="assets/post-2.webp" alt="Journal entry about self-love">
+                    </div>
+                    <div class="post-card-body">
+                        <span class="post-card-tag">Self-Love</span>
+                        <h3>You are not a project to be fixed</h3>
+                        <p>
+                            You are a person to be understood. Self-love isn't about
+                            improvement — it's about acceptance.
+                        </p>
+                    </div>
                 </div>
-
-                <!-- Sesi Video -->
-                <div class="pricing-card reveal reveal-delay-3">
-                    <div class="pricing-icon">📹</div>
-                    <span class="pricing-format">Panggilan Video</span>
-                    <h3>Refleksi Mendalam</h3>
-                    <p class="pricing-duration">Durasi 30 Menit/Sesi</p>
-                    <div class="pricing-price">Rp 100.000</div>
-                    <div class="pricing-divider"></div>
-                    <ul class="pricing-suitable">
-                        <li><span class="bullet">•</span> Menghadapi masalah hubungan yang berulang</li>
-                        <li><span class="bullet">•</span> Mengalami kelelahan (burnout)</li>
-                        <li><span class="bullet">•</span> Berada dalam fase transisi hidup</li>
-                        <li><span class="bullet">•</span> Butuh kejelasan lebih dalam sebelum keputusan</li>
-                    </ul>
-                    <a href="https://wa.me/6281111123943?text=Halo%20ATTUNE!%20Saya%20ingin%20memesan%20sesi%20Refleksi%20Mendalam%20Video%20(Rp%20100.000)"
-                        target="_blank" rel="noopener noreferrer" class="btn btn-primary">
-                        Pesan Sesi Ini
-                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-                            <path d="M1 8H15M15 8L8 1M15 8L8 15" stroke="currentColor" stroke-width="1.5"
-                                stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
-                    </a>
+                <div class="post-card reveal reveal-delay-3">
+                    <div class="post-card-image">
+                        <img src="assets/post-3.webp" alt="Journal entry about mindfulness">
+                    </div>
+                    <div class="post-card-body">
+                        <span class="post-card-tag">Mindfulness</span>
+                        <h3>Finding peace in the present moment</h3>
+                        <p>
+                            The present moment is the only place where life can truly
+                            be found. Everything else is memory or anticipation.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Cara Kerja -->
-    <section class="how-it-works" id="how-it-works">
-        <div class="container">
-            <div class="how-header reveal">
-                <span class="section-label">Cara Kerja</span>
-                <h2 class="section-title">Perjalanan Anda dalam 5 langkah mudah</h2>
-                <p class="section-subtitle">
-                    Dari kontak pertama hingga sesi refleksi Anda — kami membuatnya mudah dan
-                    nyaman di setiap langkah.
-                </p>
-            </div>
-            <div class="steps-grid">
-                <div class="step-card reveal reveal-delay-1">
-                    <div class="step-number">1</div>
-                    <span class="step-icon">📱</span>
-                    <h4>Hubungi</h4>
-                    <p>DM kami di Instagram / Website / WhatsApp untuk memulai</p>
-                </div>
-                <div class="step-card reveal reveal-delay-2">
-                    <div class="step-number">2</div>
-                    <span class="step-icon">🎯</span>
-                    <h4>Pilih</h4>
-                    <p>Pilih jenis sesi — Chat, Suara, atau Video</p>
-                </div>
-                <div class="step-card reveal reveal-delay-3">
-                    <div class="step-number">3</div>
-                    <span class="step-icon">📅</span>
-                    <h4>Jadwalkan</h4>
-                    <p>Kami akan mencari waktu yang cocok untuk Anda</p>
-                </div>
-                <div class="step-card reveal reveal-delay-4">
-                    <div class="step-number">4</div>
-                    <span class="step-icon">💳</span>
-                    <h4>Konfirmasi</h4>
-                    <p>Konfirmasi pembayaran mengamankan slot sesi Anda</p>
-                </div>
-                <div class="step-card reveal reveal-delay-4">
-                    <div class="step-number">5</div>
-                    <span class="step-icon">🌿</span>
-                    <h4>Sesi</h4>
-                    <p>Sesi refleksi Anda dimulai — aman dan terpandu</p>
-                </div>
-            </div>
-            <div class="how-cta reveal">
-                <a href="https://wa.me/6281111123943?text=Halo%20ATTUNE!%20Saya%20ingin%20memulai%20perjalanan%20refleksi%20saya"
-                    target="_blank" rel="noopener noreferrer" class="btn btn-primary">
-                    Mulai Perjalanan Anda
-                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-                        <path d="M1 8H15M15 8L8 1M15 8L8 15" stroke="currentColor" stroke-width="1.5"
-                            stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimoni -->
+    <!-- Testimonials -->
     <section class="testimonials" id="testimonials">
         <div class="container">
             <div class="testimonials-header reveal">
-                <span class="section-label">Cerita</span>
-                <h2 class="section-title">Apa kata mereka</h2>
+                <span class="section-label">Stories</span>
+                <h2 class="section-title">Voices from the community</h2>
                 <p class="section-subtitle">
-                    Cerita nyata dari orang-orang yang menemukan kejelasan dan ketenangan melalui
-                    sesi refleksi mereka.
+                    Real stories from real people who found a moment of peace
+                    with attune.id.
                 </p>
             </div>
             <div class="testimonials-grid">
                 <div class="testimonial-card reveal reveal-delay-1">
                     <div class="testimonial-stars">★★★★★</div>
                     <p class="testimonial-text">
-                        "Seneng banget bisa menemukan Attune.id & konseling di sini. Cara diskusinya hangat, tenang, dan bikin nyaman jadi nggak takut buat cerita banyak hal. Penjelasannya juga mudah dipahami dan nggak menghakimi, jadi setiap sesi terasa membantu banget buat lebih ngerti diri sendiri. Makasih banyak Attune.id sudah hadir dan support saya 🙏✨"
+                        "attune.id helped me realize that taking a pause isn't a weakness —
+                        it's the most courageous thing I can do for myself."
                     </p>
                     <div class="testimonial-author">
-                        <div class="testimonial-avatar">H</div>
+                        <div class="testimonial-avatar">A</div>
                         <div>
-                            <div class="testimonial-name">Hanif</div>
-                            <div class="testimonial-role">Karyawan Swasta</div>
+                            <div class="testimonial-name">Alexandra</div>
+                            <div class="testimonial-role">Yoga Practitioner</div>
                         </div>
                     </div>
                 </div>
                 <div class="testimonial-card reveal reveal-delay-2">
                     <div class="testimonial-stars">★★★★★</div>
                     <p class="testimonial-text">
-                        "Attune.id sangat membantu dalam memahami diri saya, sangat insightful 😊. Saya bisa menyadari bahwa diri ini perlu waktu untuk tenang supaya bisa lebih mengenal diri dan memahami kondisi pribadi saya. Saya sangat merasa dipahami sekali 🙏"
+                        "The reflections on self-love changed how I talk to myself.
+                        I'm learning to be kinder, one day at a time."
                     </p>
                     <div class="testimonial-author">
-                        <div class="testimonial-avatar">V</div>
+                        <div class="testimonial-avatar">M</div>
                         <div>
-                            <div class="testimonial-name">Vena</div>
-                            <div class="testimonial-role">Mahasiswa</div>
+                            <div class="testimonial-name">Marcus</div>
+                            <div class="testimonial-role">Software Engineer</div>
                         </div>
                     </div>
                 </div>
                 <div class="testimonial-card reveal reveal-delay-3">
                     <div class="testimonial-stars">★★★★★</div>
                     <p class="testimonial-text">
-                        "Sesi video call yang terasa lebih nyaman untuk saya, karena saya merasa dipahami oleh Attune.id. Ada banyak hal yang membuat saya merasa sendiri & tidak jelas dalam hidup saya, namun saya terbantu dengan hadirnya Attune.id. Dari beberapa sesi yang saya jalani, saya tidak lagi merasa sendiri & menjadi bisa lebih terbuka pikirannya, makasih ya Attune.id 🙏😊"
-                    </p>
-                    <div class="testimonial-author">
-                        <div class="testimonial-avatar">D</div>
-                        <div>
-                            <div class="testimonial-name">Diah</div>
-                            <div class="testimonial-role">Wiraswasta</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-card reveal reveal-delay-1">
-                    <div class="testimonial-stars">★★★★★</div>
-                    <p class="testimonial-text">
-                        "Dari sesi terapi bersama Attune.id saya sadar bahwa memilih pasangan itu mengenai melihat lebih dalam apa yang sebenarnya saya cari. Membedakan antara toxic relationship atau masalah yang memang layak untuk diperjuangkan. Menyadarkan diri bahwa memilih diri sendiri bukan berarti pengecut tapi berani untuk memulai kembali. Mencintai artinya rela melepaskan."
+                        "A safe space indeed. Every post feels like a warm hug on days
+                        when I need it most. Thank you for this beautiful campaign."
                     </p>
                     <div class="testimonial-author">
                         <div class="testimonial-avatar">S</div>
                         <div>
-                            <div class="testimonial-name">Sekar</div>
-                            <div class="testimonial-role">Mahasiswi</div>
+                            <div class="testimonial-name">Sarah</div>
+                            <div class="testimonial-role">Psychology Student</div>
                         </div>
                     </div>
                 </div>
@@ -1780,28 +1607,123 @@
         </div>
     </section>
 
-    <!-- CTA / Kontak -->
+    <!-- Booking & Counseling -->
+    <section class="booking" id="booking">
+        <div class="container">
+            <div class="booking-grid">
+                <div class="booking-info reveal">
+                    <span class="section-label">Counseling</span>
+                    <h2>Book a session. Find your balance.</h2>
+                    <p>
+                        Sometimes we all need a gentle guide to help us navigate the
+                        inner landscape. Our counseling sessions are a safe, judgment-free
+                        space where you can explore your thoughts, feelings, and patterns
+                        with a compassionate professional.
+                    </p>
+                    <ul class="booking-benefits">
+                        <li>
+                            <span class="check">✓</span>
+                            One-on-one sessions with licensed psychologists
+                        </li>
+                        <li>
+                            <span class="check">✓</span>
+                            Available online — from the comfort of your space
+                        </li>
+                        <li>
+                            <span class="check">✓</span>
+                            Flexible scheduling that respects your pace
+                        </li>
+                        <li>
+                            <span class="check">✓</span>
+                            Completely confidential and judgment-free
+                        </li>
+                    </ul>
+                    <a href="https://wa.me/6281234567890?text=Hi%20attune.id%2C%20I'd%20like%20to%20book%20a%20counseling%20session"
+                        target="_blank" rel="noopener noreferrer" class="whatsapp-btn">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                        </svg>
+                        Chat on WhatsApp
+                    </a>
+                </div>
+                <div class="booking-form reveal reveal-delay-2">
+                    <h3>Request a session</h3>
+                    <p class="form-subtitle">Fill in the form and we'll get back to you within 24 hours.</p>
+                    <form id="bookingForm" onsubmit="handleBooking(event)">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">First Name <span class="required">*</span></label>
+                                <input type="text" id="firstName" placeholder="Your first name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name</label>
+                                <input type="text" id="lastName" placeholder="Your last name">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email <span class="required">*</span></label>
+                            <input type="email" id="email" placeholder="you@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone / WhatsApp <span class="required">*</span></label>
+                            <input type="tel" id="phone" placeholder="+62 812-3456-7890" required>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="sessionType">Session Type <span class="required">*</span></label>
+                                <select id="sessionType" required>
+                                    <option value="">Select a type</option>
+                                    <option value="individual">Individual Counseling</option>
+                                    <option value="couples">Couples Counseling</option>
+                                    <option value="group">Group Session</option>
+                                    <option value="consultation">Free Initial Consultation</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="preferredDate">Preferred Date</label>
+                                <input type="date" id="preferredDate">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message <span class="required">*</span></label>
+                            <textarea id="message"
+                                placeholder="Tell us a little about what you'd like to explore together..."
+                                required></textarea>
+                        </div>
+                        <button type="submit" class="form-submit">
+                            Send Request
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M1 8H15M15 8L8 1M15 8L8 15" stroke="currentColor" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                        <p class="form-note">Your information is kept confidential. We respect your privacy.</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
     <section class="cta" id="cta">
         <div class="container">
             <div class="cta-content reveal">
-                <span class="section-label">Mulai Perjalanan Anda</span>
-                <h2 class="section-title">Siapkah untuk menyelaraskan dengan diri Anda?</h2>
+                <span class="section-label">Begin Your Journey</span>
+                <h2 class="section-title">Ready to realign with yourself?</h2>
                 <p class="section-subtitle">
-                    Satu percakapan dapat mengubah cara Anda melihat segalanya. Hubungi kami hari ini
-                    dan ambil langkah pertama menuju kejelasan emosional.
+                    Join our growing community of gentle souls. Every week, a new reflection
+                    delivered to your inbox — no pressure, just presence.
                 </p>
                 <div class="hero-actions" style="justify-content: center;">
-                    <a href="https://wa.me/6281111123943?text=Halo%20ATTUNE!%20Saya%20ingin%20memesan%20sesi"
-                        target="_blank" rel="noopener noreferrer" class="btn btn-primary">
-                        💬 Chat di WhatsApp
+                    <a href="#" class="btn btn-primary">
+                        Subscribe for Free
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path d="M1 8H15M15 8L8 1M15 8L8 15" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
                     </a>
-                    <a href="https://instagram.com/attune.id" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
-                        📸 Ikuti @attune.id
-                    </a>
-                </div>
-                <div class="cta-contact-info">
-                    <span class="cta-contact-item">📧 attune.psych46@gmail.com</span>
-                    <span class="cta-contact-item">📱 0811 1112 3943</span>
+                    <a href="#" class="btn btn-secondary">Follow on Instagram</a>
                 </div>
             </div>
         </div>
@@ -1814,40 +1736,43 @@
                 <div class="footer-brand">
                     <a href="#" class="logo">attune<span>.</span>id</a>
                     <p>
-                        Ruang profesional dan aman untuk membantu Anda memahami emosi,
-                        mendapatkan kejelasan, dan menghadapi tantangan hidup dengan kesadaran yang lebih dalam.
-                        Karena pertumbuhan tidak selalu datang dari memaksakan diri —
-                        terkadang pertumbuhan datang dari memahami diri sendiri lebih baik.
+                        A safe space to pause, reflect, and realign with yourself.
+                        Psychology, reflection, and self-love — for the beautifully
+                        complex human that you are.
                     </p>
                 </div>
                 <div class="footer-col">
-                    <h4>Jelajahi</h4>
+                    <h4>Explore</h4>
                     <ul>
-                        <li><a href="#about">Apa itu Attune.id</a></li>
-                        <li><a href="#framework">Kerangka</a></li>
-                        <li><a href="#pricing">Harga</a></li>
-                        <li><a href="#testimonials">Cerita</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#values">Values</a></li>
+                        <li><a href="#posts">Journal</a></li>
+                        <li><a href="#testimonials">Stories</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
-                    <h4>Terhubung</h4>
+                    <h4>Connect</h4>
                     <ul>
-                        <li><a href="https://instagram.com/attune.id" target="_blank">Instagram</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">TikTok</a></li>
+                        <li><a href="#">YouTube</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
-                    <h4>Dukungan</h4>
+                    <h4>Support</h4>
                     <ul>
                         <li><a href="#">FAQ</a></li>
-                        <li><a href="#">Privasi</a></li>
-                        <li><a href="#">Ketentuan</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Terms</a></li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <span>&copy; 2026 ATTUNE. Dibuat dengan hati.</span>
+                <span>&copy; 2026 attune.id. Made with intention.</span>
                 <div class="footer-social">
-                    <a href="https://instagram.com/attune.id" target="_blank" aria-label="Instagram">IG</a>
+                    <a href="#" aria-label="Instagram">IG</a>
                     <a href="#" aria-label="Twitter">X</a>
                     <a href="#" aria-label="TikTok">TT</a>
                 </div>
@@ -1906,6 +1831,38 @@
         }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
 
         document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+        // Booking form handler
+        function handleBooking(event) {
+            event.preventDefault();
+            const form = document.getElementById('bookingForm');
+            const firstName = document.getElementById('firstName').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const phone = document.getElementById('phone').value.trim();
+            const sessionType = document.getElementById('sessionType').value;
+            const message = document.getElementById('message').value.trim();
+
+            if (!firstName || !email || !phone || !sessionType || !message) {
+                alert('Please fill in all required fields.');
+                return;
+            }
+
+            // Build WhatsApp message
+            const lastName = document.getElementById('lastName').value.trim();
+            const preferredDate = document.getElementById('preferredDate').value;
+            const name = lastName ? `${firstName} ${lastName}` : firstName;
+
+            let waMessage = `Hi attune.id! I'd like to book a counseling session.%0A%0A`;
+            waMessage += `*Name:* ${name}%0A`;
+            waMessage += `*Email:* ${email}%0A`;
+            waMessage += `*Phone:* ${phone}%0A`;
+            waMessage += `*Session Type:* ${sessionType}%0A`;
+            if (preferredDate) waMessage += `*Preferred Date:* ${preferredDate}%0A`;
+            waMessage += `*Message:* ${message}`;
+
+            const waUrl = `https://wa.me/6281234567890?text=${waMessage}`;
+            window.open(waUrl, '_blank');
+        }
     </script>
 </body>
 

@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ATTUNE — Jeda. Renungkan. Selaraskan.</title>
+    <title>ATTUNE — Pause. Reflect. Realign.</title>
     <meta name="description"
-        content="Ruang profesional dan aman untuk membantu Anda memahami emosi, mendapatkan kejelasan, dan menghadapi tantangan hidup dengan kesadaran yang lebih dalam.">
+        content="A professional and safe space to help you understand your emotions, gain clarity, and navigate life challenges with greater awareness.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -329,12 +329,6 @@
             font-style: italic;
         }
 
-        .hero h1 .sub-lang {
-            font-size: 0.55em;
-            font-weight: 400;
-            opacity: 0.75;
-        }
-
         .hero p {
             font-size: 1.15rem;
             color: var(--text-light);
@@ -408,7 +402,6 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
-            object-position: center center;
             display: block;
         }
 
@@ -750,7 +743,7 @@
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 32px;
-            align-items: stretch;
+            align-items: start;
         }
 
         .pricing-card {
@@ -762,7 +755,6 @@
             position: relative;
             display: flex;
             flex-direction: column;
-            min-height: 540px;
         }
 
         .pricing-card:hover {
@@ -956,13 +948,9 @@
             margin-bottom: 64px;
         }
 
-        .testimonials-header .section-subtitle {
-            margin: 0 auto;
-        }
-
         .testimonials-grid {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: repeat(3, 1fr);
             gap: 32px;
         }
 
@@ -1396,13 +1384,13 @@
         <div class="container nav-inner">
             <a href="#" class="logo">attune<span>.</span>id</a>
             <ul class="nav-links" id="navLinks">
-                <li><a href="#about">Apa itu ATTUNE</a></li>
-                <li><a href="#pricing">Harga</a></li>
-                <li><a href="#how-it-works">Cara Kerja</a></li>
-                <li><a href="#testimonials">Cerita</a></li>
-                <li><a href="#cta" class="nav-cta">Pesan Sesi</a></li>
+                <li><a href="#about">What is ATTUNE</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#how-it-works">How It Works</a></li>
+                <li><a href="#testimonials">Stories</a></li>
+                <li><a href="#cta" class="nav-cta">Book a Session</a></li>
             </ul>
-            <button class="mobile-toggle" id="mobileToggle" aria-label="Buka menu">
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
                 <span></span><span></span><span></span>
             </button>
         </div>
@@ -1415,213 +1403,186 @@
                 <div class="hero-content">
                     <div class="hero-badge">
                         <span class="dot"></span>
-                        Ruang Refleksi Emosional
+                        Emotional Reflection Space
                     </div>
                     <h1>
                         Pause.<br>
-                        <span class="sub-lang">(Jeda.)</span><br>
                         Reflect.<br>
-                        <span class="sub-lang">(Renungkan.)</span><br>
-                        <span class="highlight">
-                            Realign.
-                            <br/>
-                            <span class="sub-lang">(Selaraskan.)</span>
-                        </span>
+                        <span class="highlight">Realign.</span>
                     </h1>
                     <p>
-                        Ruang profesional dan aman untuk membantu Anda memahami emosi,
-                        mendapatkan kejelasan, dan menghadapi tantangan hidup dengan kesadaran yang lebih dalam.
-                        Karena pertumbuhan tidak selalu datang dari memaksakan diri —
-                        terkadang pertumbuhan datang dari memahami diri sendiri lebih baik.
+                        A professional and safe space to help you understand your emotions,
+                        gain clarity, and navigate life challenges with greater awareness.
+                        Because growth doesn't always come from pushing harder —
+                        sometimes it comes from understanding yourself better.
                     </p>
                     <div class="hero-actions">
                         <a href="#pricing" class="btn btn-primary">
-                            Pesan Sesi
+                            Book a Session
                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
                                 <path d="M1 8H15M15 8L8 1M15 8L8 15" stroke="currentColor" stroke-width="1.5"
                                     stroke-linecap="round" stroke-linejoin="round" />
                             </svg>
                         </a>
-                        <a href="#about" class="btn btn-secondary">Pelajari Lebih Lanjut</a>
+                        <a href="#about" class="btn btn-secondary">Learn More</a>
                     </div>
                 </div>
                 <div class="hero-visual">
                     <div class="hero-image-wrapper">
                         <div class="hero-image-ring"></div>
                         <div class="hero-image-ring-2"></div>
-                        <img src="assets/profile-picture.jpg" alt="ATTUNE" style="padding-top: 50px;">
+                        <img src="assets/profile-picture.jpg" alt="ATTUNE">
                     </div>
+                    <div class="hero-floating-tag tag-awareness">🧠 Awareness</div>
+                    <div class="hero-floating-tag tag-growth">🌿 Growth</div>
                 </div>
             </div>
         </div>
         <div class="scroll-indicator">
-            <span>Gulir</span>
+            <span>Scroll</span>
             <div class="scroll-line"></div>
         </div>
     </section>
 
-    <!-- Apa itu ATTUNE -->
+    <!-- What is ATTUNE -->
     <section class="about" id="about">
         <div class="container">
             <div class="about-grid">
                 <div class="about-content reveal">
-                    <span class="section-label">Apa itu Attune.id</span>
-                    <h2 class="section-title">Ruang untuk memahami diri sendiri</h2>
+                    <span class="section-label">What is ATTUNE</span>
+                    <h2 class="section-title">A space to understand yourself</h2>
                     <div class="motto">
-                        "ATTUNE bukan sekadar tempat untuk berbicara. Ini adalah ruang untuk memahami."
+                        "ATTUNE is not just a place to talk. It is a space to understand."
                     </div>
                     <p class="section-subtitle">
-                        Kami menyediakan sesi refleksi emosional terstruktur bagi individu yang sedang menghadapi
-                        tantangan hubungan, stres, dinamika keluarga, tekanan karier, transisi hidup,
-                        dan overthinking. Setiap sesi berlangsung hangat, rahasia, dan terpandu dengan
-                        pendekatan refleksi yang terstruktur.
+                        We provide structured emotional reflection sessions for individuals navigating
+                        relationship challenges, stress, family dynamics, career pressure, life transitions,
+                        and overthinking. Every session is warm, confidential, and guided with a structured
+                        reflection approach.
                     </p>
                     <div class="about-stats">
                         <div class="stat-item">
                             <span class="stat-number">🧠</span>
-                            <span class="stat-label">Kesadaran</span>
+                            <span class="stat-label">Awareness</span>
                         </div>
                         <div class="stat-item">
                             <span class="stat-number">🛡️</span>
-                            <span class="stat-label">Keamanan</span>
+                            <span class="stat-label">Safety</span>
                         </div>
                         <div class="stat-item">
                             <span class="stat-number">🌱</span>
-                            <span class="stat-label">Pertumbuhan</span>
+                            <span class="stat-label">Growth</span>
                         </div>
                     </div>
                 </div>
                 <div class="about-visual reveal reveal-delay-2">
                     <div class="about-visual-item">
-                        <img src="assets/post-1.webp" alt="Jurnal refleksi">
+                        <img src="assets/post-1.webp" alt="Reflection journal entry">
                     </div>
                     <div class="about-visual-item">
-                        <img src="assets/post-2.webp" alt="Praktik mencintai diri sendiri">
+                        <img src="assets/post-2.webp" alt="Self-love practice">
                     </div>
                     <div class="about-visual-item">
-                        <img src="assets/post-3.webp" alt="Momen mindfulness">
+                        <img src="assets/post-3.webp" alt="Mindfulness moment">
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Kerangka ATTUNE -->
+    <!-- ATTUNE Framework -->
     <section class="framework" id="framework">
         <div class="container">
             <div class="framework-header reveal">
-                <span class="section-label">Kerangka ATTUNE</span>
-                <h2 class="section-title">Perjalanan Anda dalam 6 langkah</h2>
+                <span class="section-label">The ATTUNE Framework</span>
+                <h2 class="section-title">Your journey in 6 steps</h2>
                 <p class="section-subtitle">
-                    Pendekatan terstruktur untuk refleksi emosional — dari mengakui di mana Anda berada
-                    hingga memberdayakan ke mana Anda ingin pergi.
+                    A structured approach to emotional reflection — from acknowledging where you are
+                    to empowering where you want to be.
                 </p>
             </div>
             <div class="framework-grid">
                 <div class="framework-card reveal reveal-delay-1">
                     <div class="framework-letter">A</div>
-                    <h3>Acknowledge (Akui)</h3>
-                    <p>Memahami keadaan emosional Anda saat ini — menyebut apa yang Anda rasakan tanpa penghakiman.</p>
+                    <h3>Acknowledge</h3>
+                    <p>Understanding your current emotional state — naming what you feel without judgment.</p>
                 </div>
                 <div class="framework-card reveal reveal-delay-1">
                     <div class="framework-letter">T</div>
-                    <h3>Tell your story (Ceritakan)</h3>
-                    <p>Berbagi pengalaman Anda dengan aman di ruang yang mendengarkan tanpa menyela.</p>
+                    <h3>Tell your story</h3>
+                    <p>Sharing your experience safely in a space that listens without interrupting.</p>
                 </div>
                 <div class="framework-card reveal reveal-delay-2">
                     <div class="framework-letter">T</div>
-                    <h3>Trace the pattern (Lacak pola)</h3>
-                    <p>Mengidentifikasi pola emosional — menyadari apa yang terus muncul dalam hidup Anda.</p>
+                    <h3>Trace the pattern</h3>
+                    <p>Identifying emotional patterns — noticing what keeps showing up in your life.</p>
                 </div>
                 <div class="framework-card reveal reveal-delay-2">
                     <div class="framework-letter">U</div>
-                    <h3>Understand (Pahami)</h3>
-                    <p>Mengenali kebutuhan dan pemicu Anda — menghubungkan titik-titik dengan penuh kasih.</p>
+                    <h3>Understand</h3>
+                    <p>Recognizing your needs and triggers — connecting the dots with compassion.</p>
                 </div>
                 <div class="framework-card reveal reveal-delay-3">
                     <div class="framework-letter">N</div>
-                    <h3>Navigate (Arahkan)</h3>
-                    <p>Mengeksplorasi kemungkinan arah — langkah kecil apa yang terasa tepat untuk Anda?</p>
+                    <h3>Navigate</h3>
+                    <p>Exploring possible directions — what small step feels right for you?</p>
                 </div>
                 <div class="framework-card reveal reveal-delay-3">
                     <div class="framework-letter">E</div>
-                    <h3>Empower (Berdayakan)</h3>
-                    <p>Melangkah maju dengan kejelasan dan kekuatan — Anda tidak sendiri dalam perjalanan ini.</p>
+                    <h3>Empower</h3>
+                    <p>Moving forward with clarity and strength — you are not alone in this journey.</p>
                 </div>
             </div>
 
             <div class="who-for reveal">
-                <h3>Untuk siapa ini?</h3>
+                <h3>Who is this for?</h3>
                 <div class="who-for-tags">
-                    <span class="who-for-tag">💔 Tantangan Hubungan</span>
-                    <span class="who-for-tag">😮‍💨 Stres & Kelelahan</span>
-                    <span class="who-for-tag">👨‍👩‍👧‍👦 Dinamika Keluarga</span>
-                    <span class="who-for-tag">💼 Tekanan Karier</span>
-                    <span class="who-for-tag">🔄 Transisi Hidup</span>
+                    <span class="who-for-tag">💔 Relationship Challenges</span>
+                    <span class="who-for-tag">😮‍💨 Stress & Exhaustion</span>
+                    <span class="who-for-tag">👨‍👩‍👧‍👦 Family Dynamics</span>
+                    <span class="who-for-tag">💼 Career Pressure</span>
+                    <span class="who-for-tag">🔄 Life Transitions</span>
                     <span class="who-for-tag">🤔 Overthinking</span>
                 </div>
                 <div class="principles">
-                    <span class="principle-tag">🔒 Rahasia</span>
-                    <span class="principle-tag">💛 Tanpa Penghakiman</span>
-                    <span class="principle-tag">🎯 Berfokus pada Refleksi</span>
-                    <span class="principle-tag">🤝 Profesional & Hangat</span>
-                    <span class="principle-tag">📅 Berdasarkan Janji Temu</span>
+                    <span class="principle-tag">🔒 Confidential</span>
+                    <span class="principle-tag">💛 Non-judgmental</span>
+                    <span class="principle-tag">🎯 Reflection-focused</span>
+                    <span class="principle-tag">🤝 Professional & warm</span>
+                    <span class="principle-tag">📅 By appointment</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Harga -->
+    <!-- Pricing -->
     <section class="pricing" id="pricing">
         <div class="container">
             <div class="pricing-header reveal">
-                <span class="section-label">Harga</span>
-                <h2 class="section-title">Pilih jalur refleksi Anda</h2>
+                <span class="section-label">Pricing</span>
+                <h2 class="section-title">Choose your reflection path</h2>
                 <p class="section-subtitle">
-                    Tiga jenis sesi yang dirancang untuk menemui Anda di mana pun Anda berada. Semua sesi
-                    bersifat rahasia, terpandu, dan disesuaikan dengan kebutuhan Anda.
+                    Three session types designed to meet you where you are. All sessions are
+                    confidential, guided, and tailored to your needs.
                 </p>
             </div>
             <div class="pricing-grid">
-                <!-- Sesi Chat -->
+                <!-- Chat Session -->
                 <div class="pricing-card reveal reveal-delay-1">
                     <div class="pricing-icon">💬</div>
-                    <span class="pricing-format">Berbasis Teks</span>
-                    <h3>Refleksi Chat</h3>
-                    <p class="pricing-duration">Durasi 30 Menit/Sesi</p>
-                    <div class="pricing-price">Rp 50.000</div>
-                    <div class="pricing-divider"></div>
-                    <ul class="pricing-suitable">
-                        <li><span class="bullet">•</span> Merasa bingung dan butuh ruang aman</li>
-                        <li><span class="bullet">•</span> Ingin mengekspresikan pikiran dengan bebas</li>
-                        <li><span class="bullet">•</span> Butuh kejelasan awal tentang situasi Anda</li>
-                    </ul>
-                    <a href="https://wa.me/6281111123943?text=Halo%20ATTUNE!%20Saya%20ingin%20memesan%20sesi%20Refleksi%20Chat%20(Rp%2050.000)"
-                        target="_blank" rel="noopener noreferrer" class="btn btn-primary">
-                        Pesan Sesi Ini
-                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-                            <path d="M1 8H15M15 8L8 1M15 8L8 15" stroke="currentColor" stroke-width="1.5"
-                                stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
-                    </a>
-                </div>
-
-                <!-- Sesi Suara (Featured) -->
-                <div class="pricing-card featured reveal reveal-delay-2">
-                    <div class="pricing-icon">🎙️</div>
-                    <span class="pricing-format">Panggilan Suara</span>
-                    <h3>Refleksi Suara</h3>
-                    <p class="pricing-duration">Durasi 30 Menit/Sesi</p>
+                    <span class="pricing-format">Text-based</span>
+                    <h3>Reflection Chat</h3>
+                    <p class="pricing-duration">30 minutes</p>
                     <div class="pricing-price">Rp 75.000</div>
                     <div class="pricing-divider"></div>
                     <ul class="pricing-suitable">
-                        <li><span class="bullet">•</span> Perlu didengarkan dan dipahami</li>
-                        <li><span class="bullet">•</span> Merasa lelah secara emosional</li>
-                        <li><span class="bullet">•</span> Ingin arahan dalam menangani suatu situasi</li>
+                        <li><span class="bullet">•</span> Feel overwhelmed and need a safe space</li>
+                        <li><span class="bullet">•</span> Want to express thoughts freely</li>
+                        <li><span class="bullet">•</span> Need initial clarity about your situation</li>
                     </ul>
-                    <a href="https://wa.me/6281111123943?text=Halo%20ATTUNE!%20Saya%20ingin%20memesan%20sesi%20Refleksi%20Suara%20(Rp%2075.000)"
+                    <a href="https://wa.me/6281234567890?text=Hi%20ATTUNE!%20I'd%20like%20to%20book%20a%20Reflection%20Chat%20session%20(Rp%2075.000)"
                         target="_blank" rel="noopener noreferrer" class="btn btn-primary">
-                        Pesan Sesi Ini
+                        Book This Session
                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
                             <path d="M1 8H15M15 8L8 1M15 8L8 15" stroke="currentColor" stroke-width="1.5"
                                 stroke-linecap="round" stroke-linejoin="round" />
@@ -1629,23 +1590,46 @@
                     </a>
                 </div>
 
-                <!-- Sesi Video -->
-                <div class="pricing-card reveal reveal-delay-3">
-                    <div class="pricing-icon">📹</div>
-                    <span class="pricing-format">Panggilan Video</span>
-                    <h3>Refleksi Mendalam</h3>
-                    <p class="pricing-duration">Durasi 30 Menit/Sesi</p>
+                <!-- Voice Session (Featured) -->
+                <div class="pricing-card featured reveal reveal-delay-2">
+                    <div class="pricing-icon">🎙️</div>
+                    <span class="pricing-format">Voice Call</span>
+                    <h3>Voice Reflection</h3>
+                    <p class="pricing-duration">30 minutes</p>
                     <div class="pricing-price">Rp 100.000</div>
                     <div class="pricing-divider"></div>
                     <ul class="pricing-suitable">
-                        <li><span class="bullet">•</span> Menghadapi masalah hubungan yang berulang</li>
-                        <li><span class="bullet">•</span> Mengalami kelelahan (burnout)</li>
-                        <li><span class="bullet">•</span> Berada dalam fase transisi hidup</li>
-                        <li><span class="bullet">•</span> Butuh kejelasan lebih dalam sebelum keputusan</li>
+                        <li><span class="bullet">•</span> Need to be heard and understood</li>
+                        <li><span class="bullet">•</span> Feel emotionally tired</li>
+                        <li><span class="bullet">•</span> Want direction in handling a situation</li>
                     </ul>
-                    <a href="https://wa.me/6281111123943?text=Halo%20ATTUNE!%20Saya%20ingin%20memesan%20sesi%20Refleksi%20Mendalam%20Video%20(Rp%20100.000)"
+                    <a href="https://wa.me/6281234567890?text=Hi%20ATTUNE!%20I'd%20like%20to%20book%20a%20Voice%20Reflection%20session%20(Rp%20100.000)"
                         target="_blank" rel="noopener noreferrer" class="btn btn-primary">
-                        Pesan Sesi Ini
+                        Book This Session
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path d="M1 8H15M15 8L8 1M15 8L8 15" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- Video Session -->
+                <div class="pricing-card reveal reveal-delay-3">
+                    <div class="pricing-icon">📹</div>
+                    <span class="pricing-format">Video Call</span>
+                    <h3>Deep Reflection</h3>
+                    <p class="pricing-duration">45 minutes</p>
+                    <div class="pricing-price">Rp 175.000</div>
+                    <div class="pricing-divider"></div>
+                    <ul class="pricing-suitable">
+                        <li><span class="bullet">•</span> Face recurring relationship issues</li>
+                        <li><span class="bullet">•</span> Experience burnout</li>
+                        <li><span class="bullet">•</span> Are in a life transition phase</li>
+                        <li><span class="bullet">•</span> Need deeper clarity before decisions</li>
+                    </ul>
+                    <a href="https://wa.me/6281234567890?text=Hi%20ATTUNE!%20I'd%20like%20to%20book%20a%20Deep%20Reflection%20Video%20session%20(Rp%20175.000)"
+                        target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                        Book This Session
                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
                             <path d="M1 8H15M15 8L8 1M15 8L8 15" stroke="currentColor" stroke-width="1.5"
                                 stroke-linecap="round" stroke-linejoin="round" />
@@ -1656,53 +1640,53 @@
         </div>
     </section>
 
-    <!-- Cara Kerja -->
+    <!-- How It Works -->
     <section class="how-it-works" id="how-it-works">
         <div class="container">
             <div class="how-header reveal">
-                <span class="section-label">Cara Kerja</span>
-                <h2 class="section-title">Perjalanan Anda dalam 5 langkah mudah</h2>
+                <span class="section-label">How It Works</span>
+                <h2 class="section-title">Your journey in 5 simple steps</h2>
                 <p class="section-subtitle">
-                    Dari kontak pertama hingga sesi refleksi Anda — kami membuatnya mudah dan
-                    nyaman di setiap langkah.
+                    From first contact to your reflection session — we make it easy and
+                    comfortable every step of the way.
                 </p>
             </div>
             <div class="steps-grid">
                 <div class="step-card reveal reveal-delay-1">
                     <div class="step-number">1</div>
                     <span class="step-icon">📱</span>
-                    <h4>Hubungi</h4>
-                    <p>DM kami di Instagram / Website / WhatsApp untuk memulai</p>
+                    <h4>Contact</h4>
+                    <p>DM us on Instagram or WhatsApp to get started</p>
                 </div>
                 <div class="step-card reveal reveal-delay-2">
                     <div class="step-number">2</div>
                     <span class="step-icon">🎯</span>
-                    <h4>Pilih</h4>
-                    <p>Pilih jenis sesi — Chat, Suara, atau Video</p>
+                    <h4>Choose</h4>
+                    <p>Pick your session type — Chat, Voice, or Video</p>
                 </div>
                 <div class="step-card reveal reveal-delay-3">
                     <div class="step-number">3</div>
                     <span class="step-icon">📅</span>
-                    <h4>Jadwalkan</h4>
-                    <p>Kami akan mencari waktu yang cocok untuk Anda</p>
+                    <h4>Schedule</h4>
+                    <p>We'll find a time that works perfectly for you</p>
                 </div>
                 <div class="step-card reveal reveal-delay-4">
                     <div class="step-number">4</div>
                     <span class="step-icon">💳</span>
-                    <h4>Konfirmasi</h4>
-                    <p>Konfirmasi pembayaran mengamankan slot sesi Anda</p>
+                    <h4>Confirm</h4>
+                    <p>Payment confirmation secures your session slot</p>
                 </div>
                 <div class="step-card reveal reveal-delay-4">
                     <div class="step-number">5</div>
                     <span class="step-icon">🌿</span>
-                    <h4>Sesi</h4>
-                    <p>Sesi refleksi Anda dimulai — aman dan terpandu</p>
+                    <h4>Session</h4>
+                    <p>Your reflection session begins — safe and guided</p>
                 </div>
             </div>
             <div class="how-cta reveal">
-                <a href="https://wa.me/6281111123943?text=Halo%20ATTUNE!%20Saya%20ingin%20memulai%20perjalanan%20refleksi%20saya"
+                <a href="https://wa.me/6281234567890?text=Hi%20ATTUNE!%20I'd%20like%20to%20start%20my%20reflection%20journey"
                     target="_blank" rel="noopener noreferrer" class="btn btn-primary">
-                    Mulai Perjalanan Anda
+                    Start Your Journey
                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
                         <path d="M1 8H15M15 8L8 1M15 8L8 15" stroke="currentColor" stroke-width="1.5"
                             stroke-linecap="round" stroke-linejoin="round" />
@@ -1712,67 +1696,57 @@
         </div>
     </section>
 
-    <!-- Testimoni -->
+    <!-- Testimonials -->
     <section class="testimonials" id="testimonials">
         <div class="container">
             <div class="testimonials-header reveal">
-                <span class="section-label">Cerita</span>
-                <h2 class="section-title">Apa kata mereka</h2>
+                <span class="section-label">Stories</span>
+                <h2 class="section-title">What others are saying</h2>
                 <p class="section-subtitle">
-                    Cerita nyata dari orang-orang yang menemukan kejelasan dan ketenangan melalui
-                    sesi refleksi mereka.
+                    Real stories from real people who found clarity and peace through
+                    their reflection sessions.
                 </p>
             </div>
             <div class="testimonials-grid">
                 <div class="testimonial-card reveal reveal-delay-1">
                     <div class="testimonial-stars">★★★★★</div>
                     <p class="testimonial-text">
-                        "Seneng banget bisa menemukan Attune.id & konseling di sini. Cara diskusinya hangat, tenang, dan bikin nyaman jadi nggak takut buat cerita banyak hal. Penjelasannya juga mudah dipahami dan nggak menghakimi, jadi setiap sesi terasa membantu banget buat lebih ngerti diri sendiri. Makasih banyak Attune.id sudah hadir dan support saya 🙏✨"
+                        "ATTUNE helped me realize that taking a pause isn't a weakness —
+                        it's the most courageous thing I can do for myself."
                     </p>
                     <div class="testimonial-author">
-                        <div class="testimonial-avatar">H</div>
+                        <div class="testimonial-avatar">A</div>
                         <div>
-                            <div class="testimonial-name">Hanif</div>
-                            <div class="testimonial-role">Karyawan Swasta</div>
+                            <div class="testimonial-name">Alexandra</div>
+                            <div class="testimonial-role">Yoga Practitioner</div>
                         </div>
                     </div>
                 </div>
                 <div class="testimonial-card reveal reveal-delay-2">
                     <div class="testimonial-stars">★★★★★</div>
                     <p class="testimonial-text">
-                        "Attune.id sangat membantu dalam memahami diri saya, sangat insightful 😊. Saya bisa menyadari bahwa diri ini perlu waktu untuk tenang supaya bisa lebih mengenal diri dan memahami kondisi pribadi saya. Saya sangat merasa dipahami sekali 🙏"
+                        "The voice session was exactly what I needed. I felt heard,
+                        understood, and left with a clarity I hadn't felt in months."
                     </p>
                     <div class="testimonial-author">
-                        <div class="testimonial-avatar">V</div>
+                        <div class="testimonial-avatar">M</div>
                         <div>
-                            <div class="testimonial-name">Vena</div>
-                            <div class="testimonial-role">Mahasiswa</div>
+                            <div class="testimonial-name">Marcus</div>
+                            <div class="testimonial-role">Software Engineer</div>
                         </div>
                     </div>
                 </div>
                 <div class="testimonial-card reveal reveal-delay-3">
                     <div class="testimonial-stars">★★★★★</div>
                     <p class="testimonial-text">
-                        "Sesi video call yang terasa lebih nyaman untuk saya, karena saya merasa dipahami oleh Attune.id. Ada banyak hal yang membuat saya merasa sendiri & tidak jelas dalam hidup saya, namun saya terbantu dengan hadirnya Attune.id. Dari beberapa sesi yang saya jalani, saya tidak lagi merasa sendiri & menjadi bisa lebih terbuka pikirannya, makasih ya Attune.id 🙏😊"
-                    </p>
-                    <div class="testimonial-author">
-                        <div class="testimonial-avatar">D</div>
-                        <div>
-                            <div class="testimonial-name">Diah</div>
-                            <div class="testimonial-role">Wiraswasta</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-card reveal reveal-delay-1">
-                    <div class="testimonial-stars">★★★★★</div>
-                    <p class="testimonial-text">
-                        "Dari sesi terapi bersama Attune.id saya sadar bahwa memilih pasangan itu mengenai melihat lebih dalam apa yang sebenarnya saya cari. Membedakan antara toxic relationship atau masalah yang memang layak untuk diperjuangkan. Menyadarkan diri bahwa memilih diri sendiri bukan berarti pengecut tapi berani untuk memulai kembali. Mencintai artinya rela melepaskan."
+                        "A safe space indeed. Every session feels like a warm hug on days
+                        when I need it most. Thank you, ATTUNE."
                     </p>
                     <div class="testimonial-author">
                         <div class="testimonial-avatar">S</div>
                         <div>
-                            <div class="testimonial-name">Sekar</div>
-                            <div class="testimonial-role">Mahasiswi</div>
+                            <div class="testimonial-name">Sarah</div>
+                            <div class="testimonial-role">Psychology Student</div>
                         </div>
                     </div>
                 </div>
@@ -1780,28 +1754,28 @@
         </div>
     </section>
 
-    <!-- CTA / Kontak -->
+    <!-- CTA / Contact -->
     <section class="cta" id="cta">
         <div class="container">
             <div class="cta-content reveal">
-                <span class="section-label">Mulai Perjalanan Anda</span>
-                <h2 class="section-title">Siapkah untuk menyelaraskan dengan diri Anda?</h2>
+                <span class="section-label">Begin Your Journey</span>
+                <h2 class="section-title">Ready to realign with yourself?</h2>
                 <p class="section-subtitle">
-                    Satu percakapan dapat mengubah cara Anda melihat segalanya. Hubungi kami hari ini
-                    dan ambil langkah pertama menuju kejelasan emosional.
+                    One conversation can change how you see everything. Reach out today
+                    and take the first step toward emotional clarity.
                 </p>
                 <div class="hero-actions" style="justify-content: center;">
-                    <a href="https://wa.me/6281111123943?text=Halo%20ATTUNE!%20Saya%20ingin%20memesan%20sesi"
+                    <a href="https://wa.me/6281234567890?text=Hi%20ATTUNE!%20I'd%20like%20to%20book%20a%20session"
                         target="_blank" rel="noopener noreferrer" class="btn btn-primary">
-                        💬 Chat di WhatsApp
+                        💬 Chat on WhatsApp
                     </a>
                     <a href="https://instagram.com/attune.id" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
-                        📸 Ikuti @attune.id
+                        📸 Follow @attune.id
                     </a>
                 </div>
                 <div class="cta-contact-info">
-                    <span class="cta-contact-item">📧 attune.psych46@gmail.com</span>
-                    <span class="cta-contact-item">📱 0811 1112 3943</span>
+                    <span class="cta-contact-item">📧 hello@attune.id</span>
+                    <span class="cta-contact-item">📱 +62 812-3456-7890</span>
                 </div>
             </div>
         </div>
@@ -1814,38 +1788,40 @@
                 <div class="footer-brand">
                     <a href="#" class="logo">attune<span>.</span>id</a>
                     <p>
-                        Ruang profesional dan aman untuk membantu Anda memahami emosi,
-                        mendapatkan kejelasan, dan menghadapi tantangan hidup dengan kesadaran yang lebih dalam.
-                        Karena pertumbuhan tidak selalu datang dari memaksakan diri —
-                        terkadang pertumbuhan datang dari memahami diri sendiri lebih baik.
+                        A professional and safe space to help you understand your emotions,
+                        gain clarity, and navigate life challenges with greater awareness.
+                        Because growth doesn't always come from pushing harder —
+                        sometimes it comes from understanding yourself better.
                     </p>
                 </div>
                 <div class="footer-col">
-                    <h4>Jelajahi</h4>
+                    <h4>Explore</h4>
                     <ul>
-                        <li><a href="#about">Apa itu Attune.id</a></li>
-                        <li><a href="#framework">Kerangka</a></li>
-                        <li><a href="#pricing">Harga</a></li>
-                        <li><a href="#testimonials">Cerita</a></li>
+                        <li><a href="#about">What is ATTUNE</a></li>
+                        <li><a href="#framework">Framework</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                        <li><a href="#testimonials">Stories</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
-                    <h4>Terhubung</h4>
+                    <h4>Connect</h4>
                     <ul>
                         <li><a href="https://instagram.com/attune.id" target="_blank">Instagram</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">TikTok</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
-                    <h4>Dukungan</h4>
+                    <h4>Support</h4>
                     <ul>
                         <li><a href="#">FAQ</a></li>
-                        <li><a href="#">Privasi</a></li>
-                        <li><a href="#">Ketentuan</a></li>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Terms</a></li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <span>&copy; 2026 ATTUNE. Dibuat dengan hati.</span>
+                <span>&copy; 2026 ATTUNE. Made with intention.</span>
                 <div class="footer-social">
                     <a href="https://instagram.com/attune.id" target="_blank" aria-label="Instagram">IG</a>
                     <a href="#" aria-label="Twitter">X</a>
